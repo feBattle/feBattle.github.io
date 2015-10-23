@@ -86,9 +86,6 @@ $(document).ready(function() {
 	var map;
 
 			function initialize() {
-
-				
-
 				var mapOptions = {
 					mapTypeId: google.maps.MapTypeId.ROADMAP,
 					mapTypeControl: false,
