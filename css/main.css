@@ -416,9 +416,9 @@ div#partyInfo {
     z-index: 20;
     background-color: rgba(1, 1, 1, .7) ;
     visibility: visible;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
+    /*-webkit-transform: rotate(360deg);*/
+    /*-moz-transform: rotate(360deg);*/
+    /*-o-transform: rotate(360deg);*/
 }
 .about_denis_s:hover .den_sha1 {
     display: none;
@@ -485,11 +485,11 @@ div#partyInfo {
     left: 0;
     right: 0;
     overflow: auto;
-    color: #33CCE5;
     font-family: "GothamProRegular", Helvetica, sans-serif;
-    -moz-transition: all 1s 0.1s ease-in;
-    -o-transition: all 1s 0.1s ease-in;
-    -webkit-transition: all 1s 0.1s ease-in;
+    -moz-transition: all 1s 0.5s ease-in;
+    -o-transition: all 1s 0.5s ease-in;
+    -webkit-transition: all 1s 0.5s ease-in;
+    transition: all 1s 0.5s ease-in;
 }
 .text_about h4 {
     padding: 2em 0 0 0;
@@ -505,7 +505,7 @@ div#partyInfo {
     margin-left: 1em;
     margin-right: 1em;
     text-align: center;
-    color: #fff;
+    color: #33CCE5;
     max-width: 100%;
 }
 .text_about a {
