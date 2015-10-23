@@ -561,6 +561,99 @@ div#partyInfo {
 .prev_button:hover, .next_button:hover {
     color: #33cccc;
 }
+
+/*------------Reviews---------------------*/
+
+.reviews-wpar{
+    width: 65%;
+}
+.reviews-wpar h2{
+    margin-bottom: 35px;
+    /* border-bottom: 1px solid #97aac1; */
+    display: inline-block;
+    padding: 0 10px; 
+}
+.customer-container-inn{  
+    position: relative;
+    float: left;
+}
+
+.customer-container-inn a{  
+    text-decoration: none
+}
+.customer-container {
+    margin: 0 auto;
+    padding: 30px 70px 70px 70px ;
+    background-color: #F4F4F5;
+}
+.customer-quote {
+    top: 0px;
+    width: 290px;
+    text-align: left;
+    font-size: 14px;
+    color: #889eb7;
+    border: 1px solid #97aac1;
+    padding: 20px;
+    border-radius: 6px;
+    position: relative;
+    line-height: 1.75em;
+    font-weight: 300;
+    -webkit-transition: top 150ms ease-out;
+    transition: top 150ms ease-out;
+}
+
+.customer-quote:hover {
+    top: -10px;
+}
+.customer-info {
+    text-align: left;
+    position: relative;
+}
+
+.customer-info img {
+    margin-top: 20px;
+    border-radius: 100px;
+}
+.customer-name {
+    position: absolute;
+    top: 25px;
+    left: 70px;
+    font-size: 20px;
+    color: #363636;
+}
+.customer-type {
+    position: absolute;
+    top: 53px;
+    left: 70px;
+    font-size: 14px;
+    color: #363636;
+}
+
+.customer-quote:after,.customer-quote:before{
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.customer-quote:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color:  #F4F4F5;;
+    border-width: 19px;
+    margin-left: -20px;
+}
+.customer-quote:before {
+    border-color: rgba(151, 170, 193, 0);
+    border-top-color: #97aac1;
+    border-width: 20px;
+    margin-left: -21px;
+}
+
+
 /*------------Contact------------*/
 .sixth_section {
 	background-color: #000;
@@ -585,6 +678,7 @@ div#partyInfo {
 .social_icons {
     list-style: none;
     padding: 0;
+    margin-bottom: 15px;
 }
 .social_icons li {
     display: inline-block;
@@ -616,6 +710,7 @@ div#partyInfo {
     bottom: -8px;
     width: 0;
     height: 3px;
+    left: 0px;
     -webkit-transition: all .2s cubic-bezier(0.34,.42,.5,.96);
     -moz-transition: all .2s cubic-bezier(0.34,.42,.5,.96);
     -ms-transition: all .2s cubic-bezier(0.34,.42,.5,.96);
@@ -706,9 +801,9 @@ div#partyInfo {
     background-color: #33CCE5;
 }
 .map_canvas {
-    width: 400px;
-    height: 220px;
-    margin: auto;
+    width: 480px;
+    height: 280px;
+  /*  margin: auto;*/
 }
 /*------------Footer---------------------*/
 .main_footer {
@@ -723,3 +818,5 @@ div#partyInfo {
 .main_footer span {
     padding-top: 10px;
 }
+
+

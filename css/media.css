@@ -1,8 +1,17 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1500px) {
+	.reviews-wpar {
+    width: 88%;
 
+	}
+}
+@media only screen and (max-width : 1200px) {
+	.reviews-wpar {
+    width: 92%;
+    min-width: 960px;
+	}
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -37,7 +46,7 @@
 	}
 	.map_canvas {
 		width: 60%;
-		height: 200px;
+		height: 260px;
 		margin: auto;
 		padding-bottom: 50px;
 	}
@@ -46,15 +55,29 @@
 	}
 	.sixth_section p:first-child {
     padding-top: 0px;
-}
+	}
+	.customer-container-inn {
+     margin-bottom: 15px;
+    }
+    .reviews-wpar {
+   	min-width: 650px;
+	}
+
+    
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 	.map_canvas {
-		width: 270px;
-		height: 180px;
+		width: 300px;
+		height: 220px;
 		margin: auto;
 	}
+	.reviews-wpar {
+    width: 100%;
+    min-width: 0;
+	}
+
+    
 }
 /*Extra for .hookahs*/
 @media only screen and (max-width : 719px) {
