@@ -73,6 +73,12 @@ body {
     font-family: "GothamProRegular", Helvetica, sans-serif;
     letter-spacing: 1px;
     text-decoration: line-through;
+    -webkit-transition: all .3s cubic-bezier(0.34,.42,.5,.96);
+    -moz-transition: all .3s cubic-bezier(0.34,.42,.5,.96);
+    -ms-transition: all .3s cubic-bezier(0.34,.42,.5,.96);
+    -o-transition: all .3s cubic-bezier(0.34,.42,.5,.96);
+    transition: all .3s cubic-bezier(0.34,.42,.5,.96);
+
 }
 .nav a:hover {
     color: #fff;
@@ -410,6 +416,9 @@ div#partyInfo {
     z-index: 20;
     background-color: rgba(1, 1, 1, .7) ;
     visibility: visible;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
 }
 .about_denis_s:hover .den_sha1 {
     display: none;
@@ -422,6 +431,8 @@ div#partyInfo {
     display: inherit;
 }
 .about_lena:hover .lena {
+    z-index: 20;
+    background-color: rgba(1, 1, 1, .7) ;
     visibility: visible;
 }
 .about_lena:hover .len_van1 {
@@ -437,27 +448,48 @@ div#partyInfo {
 }
 .about_denis_g:hover .denisgrabina {
     z-index: 20;
-    background-color: rgba(1, 1, 1, .5) ;
+    background-color: rgba(1, 1, 1, .7) ;
     visibility: visible;
 }
 .about_denis_g:hover .den_gra1 {
     display: none;
 }
+/*block Zhenya Lupashko*/
+
+.about_zhenya .jen_lup2 {
+    display: none;
+}
+.about_zhenya:hover .jen_lup2 {
+    display: inherit;
+}
+.about_zhenya:hover .zhenya {
+    z-index: 20;
+    background-color: rgba(1, 1, 1, .7) ;
+    visibility: visible;
+}
+.about_zhenya:hover .jen_lup1 {
+    display: none;
+}
 
 .text_about {
-    border: 1px white solid;
+    /*border: 1px white solid;*/
     max-width: 500px;
     margin: auto;
     z-index: 0;
     visibility: hidden;
     position: absolute;
     text-align: center;
+    padding: 5em 0 0 0;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     overflow: auto;
-    font-family: "GothamProRegular", Helvetica, sans-serif; 
+    color: #33CCE5;
+    font-family: "GothamProRegular", Helvetica, sans-serif;
+    -moz-transition: all 1s 0.1s ease-in;
+    -o-transition: all 1s 0.1s ease-in;
+    -webkit-transition: all 1s 0.1s ease-in;
 }
 .text_about h4 {
     padding: 2em 0 0 0;
@@ -553,7 +585,7 @@ div#partyInfo {
 }
 .customer-container {
     margin: 0 auto;
-    padding: 30px 70px 70px 70px ;
+    padding: 30px 10px 40px 10px ;
     background-color: #F4F4F5;
 }
 .customer-quote {
