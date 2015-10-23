@@ -152,7 +152,7 @@ $(document).ready(function() {
 
 		$('#nav-about').on('click', function(e){
 			var header = $('.main_header').height();
-			var scrolling = ($('.second_section').offset().top)-header;
+			var scrolling = ($('.about_us').offset().top)-header;
 			e.preventDefault();
 			
 			$('html,body').stop(true).animate({scrollTop: scrolling},500,function(){	})
@@ -160,7 +160,7 @@ $(document).ready(function() {
 
 		$('#nav-team').on('click', function(e){
 			var header = $('.main_header').height();
-			var scrolling = ($('.third_section').offset().top)-header;
+			var scrolling = ($('.team').offset().top)-header;
 			e.preventDefault();
 			
 			$('html,body').stop(true).animate({scrollTop: scrolling},500,function(){	})
@@ -168,15 +168,23 @@ $(document).ready(function() {
 
 		$('#nav-portfolio').on('click', function(e){
 			var header = $('.main_header').height();
-			var scrolling = ($('.fourth_section').offset().top)-header;
+			var scrolling = ($('.portfolio').offset().top)-header;
 			e.preventDefault();
 			
 			$('html,body').stop(true).animate({scrollTop: scrolling},500,function(){	})
 		})
 
+		$('#nav-feedback').on('click', function(e){
+		var header = $('.main_header').height();
+		var scrolling = ($('.feedback_sec').offset().top)-header;
+		e.preventDefault();
+
+		$('html,body').stop(true).animate({scrollTop: scrolling},500,function(){	})
+		})
+
 		$('#nav-contact').on('click', function(e){
 			var header = $('.main_header').height();
-			var scrolling = ($('.sixth_section').offset().top)-header;
+			var scrolling = ($('.contacts').offset().top)-header;
 			e.preventDefault();
 			
 			$('html,body').stop(true).animate({scrollTop: scrolling},500,function(){	})

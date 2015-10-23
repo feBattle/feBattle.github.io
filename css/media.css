@@ -19,7 +19,7 @@
 		display: none;
 		position: absolute;
 		top: -20px;
-		left: 0px;
+		left: 0;
 		width: 100%;
 		background-color: rgba(255,255,255, .5);
 		z-index: 10;
@@ -41,8 +41,8 @@
 		border-bottom: none;
 		color: #33cccc;
 	}
-	.second_section h2 {
-		-margin-top: -70px;
+	.about_us h2 {
+		/*-margin-top: -70px;*/
 	}
 	.map_canvas {
 		width: 60%;
@@ -50,10 +50,10 @@
 		margin: auto;
 		padding-bottom: 50px;
 	}
-	.sixth_section .feedback {
+	.contacts .feedback {
 		margin-bottom: 20px;
 	}
-	.sixth_section p:first-child {
+	.contacts p:first-child {
     padding-top: 0;
 	}
 	.customer-container-inn {

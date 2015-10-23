@@ -26,6 +26,7 @@ body textarea:required:valid {
     border: 3px solid green;
 }
 body {
+    font-size: 13px;
     text-align: center;
     font-family: "GothamProRegular", Helvetica, sans-serif;
 }
@@ -83,7 +84,7 @@ body {
     text-decoration: none;
     color: #fff;
 }
-.first_section {
+.welcome {
     background-image: url(../img/atom.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,37 +92,37 @@ body {
     color: #fff;
     height: 600px;
 }
-.first_section h1 {
+.welcome h1 {
     color: #fff;
     font-size: 60px;
     margin-top: 260px;
     font-family: "GothamProRegular", Helvetica, sans-serif;
 }
 /*------------About Us-----------*/
-.second_section {
+.about_us {
     font-family: "GothamProRegular", Helvetica, sans-serif;
     background-color: #fff;
 }
-.second_section h2 {
+.about_us h2 {
     text-align: center;
     text-transform: uppercase;
     color: #33cccc;
     text-decoration: line-through;
 }
-.second_section p {
+.about_us p {
     font-size: 25px;
     color: #000;
     margin-top: 20px;
 }
-.second_section p:nth-child(2n) {
+.about_us p:nth-child(2n) {
     color: #33CCE5;
     float: right;
 }
-.second_section p:nth-child(2n+1) {
+.about_us p:nth-child(2n+1) {
     color: #33CC9A;
     float: left;
 }
-.second_section h3 {
+.about_us h3 {
     text-align: center;
     text-transform: uppercase;
     color: #33cccc;
@@ -131,104 +132,48 @@ body {
     padding-top: 20px;
 }
 @-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(1) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: scale(1.1) rotate(-5deg);
-    }
-    100% {
-        -webkit-transform: scale(1) rotate(0deg);
-    }
+    0% {-webkit-transform: scale(1) rotate(0deg); }
+    50% { -webkit-transform: scale(1.1) rotate(-5deg);   }
+    100% {-webkit-transform: scale(1) rotate(0deg); }
 }
 @-o-keyframes pulse {
-    0% {
-        -o-transform: scale(1) rotate(0deg);
-    }
-    50% {
-        -o-transform: scale(1.1) rotate(-5deg);
-    }
-    100% {
-        -o-transform: scale(1) rotate(0deg);
-    }
+    0% {   -o-transform: scale(1) rotate(0deg);    }
+    50% {   -o-transform: scale(1.1) rotate(-5deg);    }
+    100% {   -o-transform: scale(1) rotate(0deg);    }
 }
 @-moz-keyframes pulse {
-    0% {
-        -moz-transform: scale(1) rotate(0deg);
-    }
-    50% {
-        -moz-transform: scale(1.1) rotate(-5deg);
-    }
-    100% {
-        -moz-transform: scale(1) rotate(0deg);
-    }
+    0% {   -moz-transform: scale(1) rotate(0deg);    }
+    50% {   -moz-transform: scale(1.1) rotate(-5deg);    }
+    100% {   -moz-transform: scale(1) rotate(0deg);    }
 }
 @keyframes pulse {
-    0% {
-        transform: scale(1) rotate(0deg);
-    }
-    50% {
-        transform: scale(1.1) rotate(-5deg);
-    }
-    100% {
-        transform: scale(1) rotate(0deg);
-    }
+    0% {   transform: scale(1) rotate(0deg);    }
+    50% {   transform: scale(1.1) rotate(-5deg);    }
+    100% {   transform: scale(1) rotate(0deg);    }
 }
 @-webkit-keyframes bump {
-    0% {
-        top: 0;
-    }
-    5% {
-        top: 3px;
-    }
-    10% {
-        top:0;
-    }
-    100% {
-        top:0;
-    }
+    0% {top: 0;  }
+    5% {top: 3px;  }
+    10% {top:0;  }
+    100% {top:0;  }
 }
 @-o-keyframes bump {
-    0% {
-        top: 0;
-    }
-    5% {
-        top: 3px;
-    }
-    10% {
-        top:0;
-    }
-    100% {
-        top:0;
-    }
+    0% { top: 0;  }
+  5% { top: 3px;  }
+  10% { top:0;  }
+  100% { top:0;  }
 }
 @-moz-keyframes bump {
-    0% {
-        top: 0;
-    }
-    5% {
-        top: 3px;
-    }
-    10% {
-        top:0;
-    }
-    100% {
-        top:0;
-    }
+  0% { top: 0;  }
+  5% { top: 3px;  }
+  10% { top:0;  }
+  100% { top:0;  }
 }
 @keyframes bump {
-    0% {
-        top: 0;
-    }
-    5% {
-        top: 3px;
-    }
-    10% {
-        top:0;
-    }
-    100% {
-        top:0;
-    }
+  0% { top: 0;  }
+  5% { top: 3px;  }
+  10% { top:0;  }
+  100% { top:0;  }
 }
 .menuBall {
     position: relative;
@@ -400,32 +345,33 @@ div#partyInfo {
     visibility: visible;
 }
 /*------------Team------------*/
-.third_section {
+.team {
     font-family: "GothamProRegular", Helvetica, sans-serif;
     background-color: #000;
     padding-bottom: 20px;
     padding-top: 20px;
 }
-.third_section h2 {
+.team h2 {
     text-align: center;
     text-transform: uppercase;
     color: #33cccc;
     text-decoration: line-through;
 }
-/*.third_section h3 {*/
+/*.team h3 {*/
     /*text-align: center;*/
     /*text-transform: uppercase;*/
     /*color: #33CCE5;*/
     /*text-decoration: underline;*/
 /*}*/
-/*.third_section p {*/
+/*.team p {*/
     /*text-align: justify;*/
     /*font-size: 1em;*/
     /*color: #fff;*/
     /*margin-top: 20px;*/
     /*font-style: italic;*/
 /*}*/
-.third_section img {
+.team img {
+    border: 1px yellow solid;
     margin: auto;
     padding-top: 18px;
   }
@@ -439,7 +385,7 @@ div#partyInfo {
 }
 .about_denis_s:hover .denis {
     z-index: 20;
-    background-color: rgba(1, 1, 1, .5) ;
+    background-color: rgba(1, 1, 1, .7) ;
     visibility: visible;
 }
 .about_denis_s:hover .den_sha1 {
@@ -468,20 +414,17 @@ div#partyInfo {
 }
 .about_denis_g:hover .denisgrabina {
     z-index: 20;
-    background-color: rgba(71, 109, 210, 0.73);
+    background-color: rgba(1, 1, 1, .5) ;
     visibility: visible;
 }
 .about_denis_g:hover .den_gra1 {
     display: none;
 }
 
-
-
 .text_about {
     border: 1px white solid;
     max-width: 500px;
     margin: auto;
-    /*padding-top: 2em;*/
     z-index: 0;
     visibility: hidden;
     position: absolute;
@@ -504,9 +447,11 @@ div#partyInfo {
     letter-spacing: 1px;
 }
 .text_about p {
+    margin-left: 1em;
+    margin-right: 1em;
     text-align: center;
     color: #fff;
-    max-width: 80%;
+    max-width: 100%;
 }
 .text_about a {
     font-size: 2em;
@@ -523,13 +468,13 @@ div#partyInfo {
     color: transparent;
 }
 /*------------Portfolio-------------*/
-.fourth_section {
+.portfolio {
     font-family: "GothamProRegular", Helvetica, sans-serif;
     background-color: #fff;
     padding-bottom: 20px;
     padding-top: 10px;
 }
-.fourth_section h2 {
+.portfolio h2 {
     text-align: center;
     text-transform: uppercase;
     color: #33cccc;
@@ -569,7 +514,11 @@ div#partyInfo {
     margin-bottom: 35px;
     /* border-bottom: 1px solid #97aac1; */
     display: inline-block;
-    padding: 0 10px; 
+    padding: 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #33cccc;
+    text-decoration: line-through;
 }
 .customer-container-inn{  
     position: relative;
@@ -653,24 +602,24 @@ div#partyInfo {
 
 
 /*------------Contact------------*/
-.sixth_section {
+.contacts {
 	background-color: #000;
     font-family: "GothamProRegular", Helvetica, sans-serif;
     padding-bottom: 20px;
     padding-top: 10px;
 }
-.sixth_section h2 {
+.contacts h2 {
 	text-align: center;
     text-transform: uppercase;
     color: #33cccc;
     text-decoration: line-through;
     padding-bottom: 10px;
 }
-.sixth_section p {
+.contacts p {
     padding-top: 5px;
     color: #666;
 }
-.sixth_section p:first-child {
+.contacts p:first-child {
     padding-top: 30px;
 }
 .social_icons {
@@ -708,7 +657,7 @@ div#partyInfo {
     bottom: -8px;
     width: 0;
     height: 3px;
-    left: 0px;
+    left: 0;
     -webkit-transition: all .2s cubic-bezier(0.34,.42,.5,.96);
     -moz-transition: all .2s cubic-bezier(0.34,.42,.5,.96);
     -ms-transition: all .2s cubic-bezier(0.34,.42,.5,.96);
@@ -728,14 +677,14 @@ div#partyInfo {
     left: 0;
     width: 100%;
 }
-/*.sixth_section input {
+/*.contacts input {
     border-radius: 5px;
     padding: 5px;
     font-size: 16px;
     font-family: "GothamProRegular", Helvetica, sans-serif;
     border: none;
 }*/
-.sixth_section .feedback {
+.contacts .feedback {
     border-radius: 5px;
     padding: 5px;
     font-size: 16px;
@@ -744,7 +693,7 @@ div#partyInfo {
     border: none;
     color: #33cccc;
 }
-.sixth_section .feedback:hover {
+.contacts .feedback:hover {
     text-decoration: none;
     color: #666;
     background-color: #33cccc;
