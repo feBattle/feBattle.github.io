@@ -526,8 +526,6 @@ div#partyInfo {
 .fourth_section {
     font-family: "GothamProRegular", Helvetica, sans-serif;
     background-color: #fff;
-    background: url("../photos/lena1.jpg");
-    background-size: 100%;
     padding-bottom: 20px;
     padding-top: 10px;
 }
@@ -587,7 +585,7 @@ div#partyInfo {
     background-color: #F4F4F5;
 }
 .customer-quote {
-    top: 0px;
+    top: 0;
     width: 290px;
     text-align: left;
     font-size: 14px;
