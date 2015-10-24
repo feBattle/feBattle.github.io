@@ -562,9 +562,9 @@ div#partyInfo {
 
 /*------------Reviews---------------------*/
 
-.reviews-wpar{
-    width: 65%;
-}
+/*.reviews-wpar{*/
+    /*width: 65%;*/
+/*}*/
 .reviews-wpar h2{
     margin-bottom: 35px;
     /* border-bottom: 1px solid #97aac1; */
