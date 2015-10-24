@@ -577,7 +577,7 @@ div#partyInfo {
 }
 .customer-container-inn{  
     position: relative;
-    float: left;
+    /*float: left;*/
 }
 
 .customer-container-inn a{  
@@ -620,14 +620,14 @@ div#partyInfo {
     position: absolute;
     top: 25px;
     left: 70px;
-    font-size: 20px;
+    font-size: 1.5em;
     color: #363636;
 }
 .customer-type {
     position: absolute;
     top: 53px;
     left: 70px;
-    font-size: 14px;
+    font-size: 1em;
     color: #363636;
 }
 
